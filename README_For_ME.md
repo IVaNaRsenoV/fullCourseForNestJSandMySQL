@@ -15,3 +15,5 @@
 # This package use on the server
 
 # 6 Create documentation Swagger
+
+6.1 npm i @nestjs/swagger

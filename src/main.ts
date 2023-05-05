@@ -1,6 +1,7 @@
 import * as session from 'express-session';
 import * as passport from 'passport';
 import { NestFactory } from '@nestjs/core';
+import { DocumentBuilder, SwaggerModule } from '@nestjs/swagger';
 import { AppModule } from './app.module';
 
 async function bootstrap() {
@@ -14,6 +15,16 @@ async function bootstrap() {
   );
   app.use(passport.initialize());
   app.use(passport.session());
+
+  const config = new DocumentBuilder()
+    .setTitle('Akua termix')
+    .setDescription('api documentation')
+    .setVersion('1.0')
+    .addTag('api')
+    .build();
+  const document = SwaggerModule.createDocument(app, config);
+  SwaggerModule.setup('swagger', app, document);
+
   await app.listen(3000);
 }
 bootstrap();
