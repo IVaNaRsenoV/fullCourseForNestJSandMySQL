@@ -6,6 +6,7 @@ import { SequelizeConfigService } from './config/sequelizeConfig.service';
 import { databaseConfig } from './config/configuration';
 import { AuthModule } from './auth/auth.module';
 import { AuthService } from './auth/auth.service';
+import { BoilerPartsModule } from './boiler-parts/boiler-parts.module';
 
 @Module({
   imports: [
@@ -18,6 +19,7 @@ import { AuthService } from './auth/auth.service';
     }),
     UsersModule,
     AuthModule,
+    BoilerPartsModule,
   ],
   providers: [AuthService],
 })

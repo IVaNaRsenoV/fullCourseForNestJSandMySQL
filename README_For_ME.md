@@ -17,3 +17,9 @@
 # 6 Create documentation Swagger
 
 6.1 npm i @nestjs/swagger
+
+# 7 Create table boiler parts
+
+7.1 nest g mo boiler-parts
+7.2 nest g co boiler-parts
+7.3 nest g service boiler-parts
