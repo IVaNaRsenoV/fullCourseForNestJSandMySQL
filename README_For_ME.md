@@ -11,3 +11,7 @@
 
 # Third step is we should write config files for connect to the mariadb and create table for database
 # 4 create folder dto. We write data to the dto that will define data for entinity or his change
+# 5 For work with session we install passport passport-local @nestjs/passport
+# This package use on the server
+
+# 6 Create documentation Swagger
