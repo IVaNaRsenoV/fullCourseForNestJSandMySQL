@@ -10,3 +10,4 @@
 2.1 npm i sequelize sequelize-cli sequelize-typescript @nestjs/sequelize
 
 # Third step is we should write config files for connect to the mariadb and create table for database
+# 4 create folder dto. We write data to the dto that will define data for entinity or his change
