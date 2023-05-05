@@ -33,3 +33,5 @@
 8.5 npx sequelize-cli seed:generate --name boiler-parts
 8.6 npx sequelize-cli db:migrate
 8.7 npx sequelize-cli db:seed:all
+
+# 9 Write method for receive our products

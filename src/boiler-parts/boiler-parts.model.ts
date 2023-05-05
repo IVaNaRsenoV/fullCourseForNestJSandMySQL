@@ -1,4 +1,4 @@
-import { Column, Model, Table } from 'sequelize-typescript';
+import { Table, Model, Column } from 'sequelize-typescript';
 
 @Table
 export class BoilerParts extends Model {
@@ -27,7 +27,7 @@ export class BoilerParts extends Model {
   in_stock: number;
 
   @Column({ defaultValue: false })
-  bestsellers: boolean;
+  bestseller: boolean;
 
   @Column({ defaultValue: false })
   new: boolean;
