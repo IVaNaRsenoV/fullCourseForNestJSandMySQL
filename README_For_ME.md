@@ -23,3 +23,13 @@
 7.1 nest g mo boiler-parts
 7.2 nest g co boiler-parts
 7.3 nest g service boiler-parts
+
+# 8 MIGRATIONS https://sequelize.org/docs/v6/other-topics/migrations/
+
+8.1 npx sequelize-cli init
+8.2 Execute the model generation command
+8.3 npx sequelize-cli model:generate --name BoilerParts --attributes name:string
+8.4 npx sequelize-cli db:migrate
+8.5 npx sequelize-cli seed:generate --name boiler-parts
+8.6 npx sequelize-cli db:migrate
+8.7 npx sequelize-cli db:seed:all
